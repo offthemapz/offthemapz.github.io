@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style>
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 9px 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
         h1 {
         font-family:Rockwell; font-size:53px; text-align:center; color: #993300;
         }
@@ -42,30 +62,34 @@
 </body>
 
 
+
+<!top border information>
 <h1>
     <div class="col-sm-5" style="background-color:#FFCC66;height:100px;"><a href="index.html"><h1>Patrick Stephens</h1></a></div>
 </h1>
 
 <h2>
     <div class="col-sm-2" style="background-color:#FFCC66;height:100px;"><a href="index.html"><h2>Main</h2></a></div>
-    <div class="col-sm-2" style="background-color:#FFCC66;height:100px;"><a href="portfolio.html"><h2>Portfolio</h2></a></div>
+
+
+
+<div class="col-sm-2" style="background-color:#FFCC66;height:100px;">
+<div class="dropdown">
+  <h2><span>Portfolio</span></h2>
+  <div class="dropdown-content">
+    <a href="resume.html"><h2>Resumé</h2></a>
+    <a href="cartography.html"><h2>Cartography</h2></a>
+    <a href="gis.html"><h2>GIS</h2></a>
+  </div>
+
+</div>
+</div>
+
     <div class="col-sm-3" style="background-color:#FFCC66;height:100px;"><a href="contact.html"><h2>Contact</h2></a></div>
 </h2>
+<!top border information>
 
 
-    <div class="container;col-sm-12"style="background-color:white;"align="center" >
-<div class="container">
-  <h3><a href="resume20160301.pdf">Resumé</a>
-        <h4></h4>
-      <a href="resume20160301.pdf" class="thumbnail"style="width:200px;height:260px">   
-        <img src="resume.jpg" alt="Pulpit Rock" style="width:200px;height:250px">
-      </a>
-    </div></h3></h4>
-
-
-<div class="container;col-sm-12"style="background-color:#FFCC66;" >
-  <h3 style=text-align:center>-----------------------------------</h3>
-</div>
 
 
 <div class="container;col-sm-12"style="background-color:white;"align="center" >
@@ -74,6 +98,20 @@
   <h4></h4>
       <a href="youngDryas.pdf" class="thumbnail"style="width:300px;height:210px">   
         <img src="youngerDry.JPG" alt="Pulpit Rock" style="width:300px;height:200px">
+      </a>
+      <h4>This was a project done as an honors option requirement for a climatology class. I really wanted to support <a href="http://fixwikimaps.tumblr.com/">FixWikiMaps</a> and contribute to the Wikipedia community.</h4>
+    </div></h3>
+
+<div class="container;col-sm-12"style="background-color:#FFCC66;" >
+  <h3 style=text-align:center>-----------------------------------</h3>
+</div>
+
+<div class="container;col-sm-12"style="background-color:white;"align="center" >
+<div class="container">
+  <h3><a href="jtmap.JPG">Jim Thorpe Trail</a>
+  <h4></h4>
+      <a href="jtmap.JPG" class="thumbnail"style="width:300px;height:210px">   
+        <img src="jtmap.JPG" alt="Pulpit Rock" style="width:300px;height:200px">
       </a>
       <h4>This was a fun little project</h4>
     </div></h3>
@@ -117,23 +155,11 @@
 <div class="container">
   <h3><a href="GSHP_LargeScale_Final.pdf">Lake Louise Camp</a>
   <h4></h4>
-      <a href="GSHP_LargeScale_Final.pdf" class="thumbnail"style="width:300px;height:210px">   
-        <img src="GSHP_LargeScale_Final.jpg" alt="Pulpit Rock" style="width:300px;height:200px">
+      <a href="GSHP_LargeScale_Final.pdf" class="thumbnail"style="width:300px;height:230px">   
+        <img src="GSHP_LargeScale_Final.jpg" alt="Pulpit Rock" style="width:300px;height:220px">
       </a>
-      <h4>This was a fun little project</h4>
-    </div></h3>
-
-
-    <div class="container;col-sm-12"style="background-color:#FFCC66;" >
-  <h3 style=text-align:center>-----------------------------------</h3>
-</div>
-
-<div class="container;col-sm-12"style="background-color:white;"align="center" >
-<div class="container">
-  <h3><a href="GSHP_LargeScale_Final.pdf">Lake Louise Camp</a>
-  <h4></h4>
-      <a href="GSHP_LargeScale_Final.pdf" class="thumbnail"style="width:300px;height:210px">   
-        <img src="GSHP_LargeScale_Final.jpg" alt="Pulpit Rock" style="width:300px;height:200px">
+       <a href="GSHP_Map_Final.pdf" class="thumbnail"style="width:220px;height:310px">   
+        <img src="GSHP_Map_Final.jpg" alt="Pulpit Rock" style="width:220px;height:300px">
       </a>
       <h4>This was a fun little project</h4>
     </div></h3>
