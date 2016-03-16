@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style>
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 9px 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
         h1 {
         font-family:Rockwell; font-size:53px; text-align:center; color: #993300;
         }
@@ -20,6 +40,21 @@
         {
         font-family:Rockwell; font-size:25px;text-align:center;vertical-align: middle;line-height: 75px; color: #993300;
         }
+
+        h4 
+        {
+        font-family:Rockwell; font-size:16px;text-align:center;vertical-align: middle;line-height: 75px; color: #993300;
+        }
+
+=======
+        }
+
+        h4 
+        {
+        font-family:Rockwell; font-size:16px;text-align:left;vertical-align: middle;line-height: 75px; color: #993300;
+        }
+
+>>>>>>> parent of d55af53... content addition and styling
     </style>
 </head>
 
@@ -27,22 +62,39 @@
 </body>
 
 
+
+<!top border information>
 <h1>
     <div class="col-sm-5" style="background-color:#FFCC66;height:100px;"><a href="index.html"><h1>Patrick Stephens</h1></a></div>
 </h1>
 
 <h2>
     <div class="col-sm-2" style="background-color:#FFCC66;height:100px;"><a href="index.html"><h2>Main</h2></a></div>
-    <div class="col-sm-2" style="background-color:#FFCC66;height:100px;"><a href="portfolio.html"><h2>Portfolio</h2></a></div>
+
+
+
+<div class="col-sm-2" style="background-color:#FFCC66;height:100px;">
+<div class="dropdown">
+  <h2><span>Portfolio</span></h2>
+  <div class="dropdown-content">
+    <a href="resume.html"><h2>Resumé</h2></a>
+    <a href="cartography.html"><h2>Cartography</h2></a>
+    <a href="gis.html"><h2>GIS</h2></a>
+  </div>
+
+</div>
+</div>
+
     <div class="col-sm-3" style="background-color:#FFCC66;height:100px;"><a href="contact.html"><h2>Contact</h2></a></div>
 </h2>
+<!top border information>
 
 
 
 <div class="container;col-sm-4"style="background-color:white;" >
   <div class="container">
   <h3>About me</h3>
-  <h3><small>Here is a place where I can describe what I do and keep on</small></h3>
+  <h3><small>Currently a student at the Pennsylvania State University studying Geography (GIS). Intending to graduate August of 2016!</small></h3>
 </div>
 </div>
 
