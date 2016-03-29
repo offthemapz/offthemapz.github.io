@@ -8,23 +8,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style>
 
-    .dropdown {
+.dropbtn {
+    background-color: #FFCC66;
+    color: #993300;
+    padding: 12.5px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    /*background-color: white;*/
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
-    min-width: 10px;
+    min-width: 160px;
+    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 9px 12px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content a {
+    color: #993300;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
 }
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
 
 
         h1 {
@@ -62,6 +82,30 @@
 </body>
 
 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
 
 <!top border information>
 <h1>
@@ -75,13 +119,12 @@
 
 <div class="col-sm-2" style="background-color:#FFCC66;height:100px;">
 <div class="dropdown">
-  <h2><span>Portfolio</span></h2>
-  <div class="dropdown-content">
-    <a href="resume.html"><h2>Resumé</h2></a>
-    <a href="cartography.html"><h2>Cartography</h2></a>
-    <a href="gis.html"><h2>GIS</h2></a>
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
-
 </div>
 </div>
 
@@ -91,33 +134,13 @@
 
 
 
-<div class="container;col-sm-12"style="background-color:white;"align="center" >
-<div class="container">
-  <h3><a href="http://www.personal.psu.edu/avd5316/final/">Philly Crash Atlas</a>
-  <h4></h4>
-      <a href="http://www.personal.psu.edu/avd5316/final/" class="thumbnail"style="width:300px;height:210px">   
-        <img src="phillycrash.JPG" alt="Pulpit Rock" style="width:300px;height:200px">
-      </a>
-      <h4>The Philly Crash Atlas was made by myself and a few other students in my Geovisualization class taught by Alan MacEachren. It's purpose is to give commutters an idea of the safety of their daily routes.</h4>
-    </div></h3>
-
-<div class="container;col-sm-12"style="background-color:#FFCC66;" >
-  <h3 style=text-align:center>-----------------------------------</h3>
+<div class="container;col-sm-4"style="background-color:white;" >
+  <div class="container">
+  <h3>About me</h3>
+  <h3><small>Currently a student at the Pennsylvania State University studying Geography (GIS). Intending to graduate August of 2016!</small></h3>
+</div>
 </div>
 
+</body>
 
-<div class="container;col-sm-12"style="background-color:white;"align="center" >
-<div class="container">
-  <h3><a href="chiapas.pdf">Archaeological LIDAR Processing in Mexico</a>
-  <h4></h4>
-      <a href="chiapas.pdf" class="thumbnail"style="width:300px;height:210px">   
-        <img src="chiapas.JPG" alt="Pulpit Rock" style="width:300px;height:200px">
-      </a>
-      <h4>This image shows different processing methods for finding Mayan Artifacts in the Chiapas region of Mexico. With the LIDAR data given, I was tasked to find the LIDAR processing method for exposing subsurface ruins, artifacts, and land changes.</h4>
-    </div></h3>
-
-<div class="container;col-sm-12"style="background-color:#FFCC66;" >
-  <h3 style=text-align:center>-----------------------------------</h3>
-</div>
-
-
+</html>
